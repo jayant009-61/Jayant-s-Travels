@@ -1,0 +1,199 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.z {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    height: 800px;
+    gap: 200px;
+
+}
+
+.z1 {
+    width: 430px;
+    height: 440px;
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+.m1 {
+    overflow-y: scroll;
+    /* overflow: hidden; */
+    width: 420px;
+    height: 420px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.m1 hr {
+    width: 400px;
+}
+
+.m1a {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 280px;
+}
+
+.m1b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.m1b button {
+    width: 300px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid grey;
+    background-color: rgb(146, 146, 255);
+    color: white;
+}
+
+.m1c {
+    width: 300px;
+}
+
+.m1c1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+}
+
+.m1c1a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.z2 {
+    font-size: larger;
+    color: rgb(0, 0, 0);
+}
+
+/* Base styles: Desktop/Laptop - already in your code */
+
+/* Large screens (max width 1200px) */
+@media (max-width: 1200px) {
+    .z {
+        gap: 100px;
+    }
+
+    .z1 {
+        width: 380px;
+        height: 400px;
+    }
+
+    .m1 {
+        width: 370px;
+        height: 380px;
+    }
+
+    .m1a {
+        gap: 200px;
+    }
+}
+
+/* Tablets (max width 992px) */
+@media (max-width: 992px) {
+    .z {
+        flex-direction: column;
+        height: auto;
+        gap: 30px;
+        padding: 20px 0;
+    }
+
+    .z1 {
+        width: 90%;
+        height: auto;
+    }
+
+    .m1 {
+        width: 95%;
+        height: auto;
+    }
+
+    .m1a {
+        gap: 50px;
+    }
+
+    .m1b button {
+        width: 80%;
+    }
+
+    .m1c {
+        width: 90%;
+    }
+
+    .m1c1 {
+        gap: 50px;
+    }
+}
+
+/* Mobile devices (max width 576px) */
+@media (max-width: 576px) {
+    .z {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        padding-top: 150px;
+    }
+
+    .z1 {
+        width: 70%;
+    }
+
+    .m1 {
+        width: 100%;
+        overflow-y: scroll;
+    }
+
+    .m1a {
+        gap: 150px;
+        /* flex-direction: column; */
+        /* align-items: flex-start; */
+    }
+
+    .m1b button {
+        width: 100%;
+    }
+
+    .m1c {
+        /* width: 100%; */
+    }
+
+    .m1c1 {
+        gap: 80px;
+        /* flex-direction: column; */
+        /* align-items: flex-start; */
+    }
+
+    .m1 hr {
+        width: 300px;
+    }
+
+    .z2 {
+        width: 400px;
+    }
+
+    .z2 img {
+        width: 390px;
+    }
+}

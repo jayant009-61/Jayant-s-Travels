@@ -1,0 +1,124 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.r1 {
+
+    width: 900px;
+    background: linear-gradient(90deg, rgb(172, 172, 255), rgb(255, 158, 158));
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.r12 input {
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.r12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.r13 input {
+    width: 200px;
+    height: 20px;
+    text-align: center;
+}
+.vv{
+    color: red;
+}
+.bb{
+    color: green;
+}
+.r1 button {
+    width: 100px;
+}
+
+
+/* Base styles (for desktop/laptop) are already in your code */
+
+/* Large screens (1200px and below) */
+@media (max-width: 1200px) {
+    .r1 {
+        width: 700px;
+    }
+
+    .r12 input {
+        width: 250px;
+    }
+
+    .r13 input {
+        width: 180px;
+    }
+}
+
+/* Tablets (992px and below) */
+@media (max-width: 992px) {
+    .r1 {
+        width: 90%;
+    }
+
+    .r12 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .r12 input {
+        width: 80%;
+    }
+
+    .r13 input {
+        width: 70%;
+    }
+}
+
+/* Mobile devices (576px and below) */
+@media (max-width: 576px) {
+    .r1 {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .r12 input,
+    .r13 input {
+        width: 100%;
+    }
+
+    .r1 button {
+        width: 20%;
+    }
+
+    .first {
+        padding-top: 50px;
+    }
+
+    .iop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+
+
+    }
+
+    .second {
+        width: 400px;
+    }
+
+   
+}

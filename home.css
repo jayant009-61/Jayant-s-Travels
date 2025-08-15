@@ -1,0 +1,289 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.pic img {
+    width: 100%;
+    height: auto;
+}
+
+.nav2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.a1 img {
+    width: 100px;
+    height: auto;
+}
+
+.a1 {
+    display: flex;
+}
+
+.o {
+    color: grey;
+}
+
+.b1 {
+    padding-top: 10px;
+}
+
+.g {
+    color: green;
+}
+
+.a2 {
+    width: 90%;
+    max-width: 1000px;
+    height: auto;
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.b2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.oo {
+    color: rgb(195, 0, 255);
+}
+
+.b4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.b3 input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid grey;
+    height: 30px;
+    padding: 5px;
+}
+
+.nav3 {
+    width: 100%;
+    height: auto;
+    background-color: rgba(47, 255, 92, 0.527);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.nav3 img {
+    height: 150px;
+    width: auto;
+}
+
+.nav4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.q1, .q2 {
+    width: 90%;
+    max-width: 1200px;
+}
+
+.mm {
+    color: grey;
+}
+
+/* 📱 Responsive Styles */
+@media (max-width: 1024px) {
+    .a2 {
+        gap: 20px;
+    }
+    .nav3 img {
+        height: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    .a2 {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav3 {
+        gap: 20px;
+    }
+    .nav3 img {
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .a1 img {
+        width: 70px;
+    }
+    .a2 {
+        padding: 15px;
+        gap: 10px;
+    }
+    .nav3 img {
+        height: 80px;
+    }
+}
+
+
+
+
+
+
+
+/* predictable sizing */
+* { box-sizing: border-box; }
+
+/* wrapper */
+.nav5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(10px, 2vw, 20px);
+  padding: clamp(12px, 2vw, 20px);
+  background-color: rgb(255, 89, 111, 0.404);
+}
+
+/* neutralize <br/> spacers from JSX */
+.nav5 br { display: none; }
+
+/* make every major row centered and capped on desktop */
+.nav5 > .w1,
+.nav5 > .w2,
+.nav5 > .w3,
+.nav5 > .w4,
+.nav5 > .hr1 {
+  width: 100%;
+  max-width: 1200px;            /* desktop cap */
+  margin-inline: auto;
+  padding-inline: clamp(8px, 2vw, 16px);
+}
+
+/* ===== W1 / W2: use grid to control spacing reliably =====
+   left = title, right = select (select won't push title away) */
+.nav5 > .w1,
+.nav5 > .w2 {
+  display: grid;
+  grid-template-columns: 1fr minmax(160px, 320px);
+  align-items: center;
+  column-gap: clamp(8px, 3vw, 28px);
+  row-gap: 8px;
+}
+
+/* when narrow: stack */
+@media (max-width: 720px) {
+  .nav5 > .w1,
+  .nav5 > .w2 {
+    grid-template-columns: 1fr;
+    justify-items: stretch;
+  }
+}
+
+/* title & select visuals */
+.w1 h4, .w2 h4 {
+  margin: 0;
+  font-size: clamp(15px, 1.8vw, 18px);
+  white-space: nowrap;
+}
+.w1 select, .w2 select {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 100%;
+  background: #fff;
+}
+
+/* hr */
+.hr1 .kl {
+  border: 0;
+  border-top: 1px solid #e6e6e6;
+  margin: clamp(8px, 2vw, 16px) 0;
+}
+
+/* ===== W3 (links): responsive grid ===== */
+.w3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: clamp(10px, 2vw, 18px);
+  align-items: start;
+}
+.w3 h3 { margin: 0 0 6px 0; }
+.po { list-style: none; padding: 0; margin: 0; }
+.po li { margin: 6px 0; }
+
+/* ===== W4 (footer): grid to avoid giant gaps =====
+   left (a11) and right (a12: icons) */
+.w4 {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: clamp(8px, 2vw, 16px);
+  align-items: center;
+}
+
+/* stack footer on small screens */
+@media (max-width: 720px) {
+  .w4 {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+}
+
+/* tight icon/text groups */
+.a11, .a12 {
+  display: flex;
+  align-items: center;
+  gap: clamp(4px, 1.2vw, 8px);   /* reduced gap */
+  flex-wrap: wrap;
+}
+.a12 svg { width: 18px; height: 18px; }
+
+/* additional safeguards */
+.nav5 * { max-width: 100%; }     /* prevents overflow from images/forms */
+
+
+
+
+
+
+
+
+.w1 h4:hover {
+    color: blue;
+}
+
+.w2 h4:hover {
+    color: blue;
+}
+
+.w3 h3:hover {
+    color: blue;
+}
+

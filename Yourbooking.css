@@ -1,0 +1,71 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.tic {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.hr {
+    width: 300px;
+}
+
+.ticket {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(161, 106, 255, 0.213);
+    width: 500px;
+    height: 150px;
+    border-radius: 20px;
+    gap: 50px;
+    /* flex-direction: column; */
+
+}
+
+.imge img {
+    border-radius: 50%;
+}
+
+.br {
+    display: flex;
+    gap: 10px;
+}
+
+
+@media (max-width: 1024px) {
+
+ 
+    .q1,
+    .q2 {
+        width: 95%;
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+
+
+    .ticket {
+        width: 465px;
+    }
+}
+
+@media (max-width: 480px) {
+
+
+    .ticket {
+        width: 300px;
+    }
+}
